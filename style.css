@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: aqua;
+    background: linear-gradient(0deg, rgb(53, 200, 244, 1)0%, rgb(208, 13, 238)80%);
+    background-attachment: fixed;
+}
+
+#form {
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    background: rgb(247, 245, 245);
+    padding: 30px;
+    border-radius: 28px 5px;
+    opacity: .9;
+   animation: frm 2.6s ease-in-out;
+
+}
+
+@keyframes frm {
+    0%{
+        transform: translateY(-200%);
+    }
+    90%{
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+
+}
+
+h2 {
+    color: rgb(192, 4, 202);
+    text-align: center;
+}
+
+#form button {
+    background-color: rgb(192, 4, 202);
+    color: white;
+    border: 1px solid #c004ca;
+    /* border-radius: 10px;
+     */
+     border-radius: 20px 8px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input-grp {
+    margin: 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-grp input {
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1.6px solid rgb(14, 191, 235);
+    outline: none;
+    color: #c004ca;
+}
+
+.input-grp input:hover {
+    background-color: rgb(242, 249, 253);
+    transition: 0.5s;
+}
+
+#form button:hover {
+    background-color: #e20eed;
+}
+
+#form button:active {
+    background-color: #ee06fa;
+}
+
+.input-grp .error{
+    font-size: 14px;
+    color: red;
+    /* margin-top: 5px; */
+}
+.input-grp.success input{
+    border-color: rgb(4, 190, 4);
+}
+
+.input-grp.error input{
+    border-color: red;
+}
